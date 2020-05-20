@@ -9,8 +9,6 @@ public class ClientResponse implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label("responded")
-	private Boolean responded;
 	@org.kie.api.definition.type.Label("response")
 	private java.lang.String response;
 
@@ -25,16 +23,7 @@ public class ClientResponse implements java.io.Serializable {
 		this.response = response;
 	}
 
-	public java.lang.Boolean getResponded() {
-		return this.responded;
-	}
-
-	public void setResponded(java.lang.Boolean responded) {
-		this.responded = responded;
-	}
-
-	public ClientResponse(java.lang.Boolean responded, java.lang.String response) {
-		this.responded = responded;
+	public ClientResponse(java.lang.String response) {
 		this.response = response;
 	}
 
