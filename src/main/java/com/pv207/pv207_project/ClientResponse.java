@@ -6,12 +6,35 @@ package com.pv207.pv207_project;
 
 public class ClientResponse implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public ClientResponse() {
-    }
+	@org.kie.api.definition.type.Label(value = "responded")
+	private boolean responded;
+	@org.kie.api.definition.type.Label(value = "response")
+	private java.lang.String response;
 
+	public ClientResponse() {
+	}
 
+	public boolean isResponded() {
+		return this.responded;
+	}
 
+	public void setResponded(boolean responded) {
+		this.responded = responded;
+	}
+
+	public java.lang.String getResponse() {
+		return this.response;
+	}
+
+	public void setResponse(java.lang.String response) {
+		this.response = response;
+	}
+
+	public ClientResponse(boolean responded, java.lang.String response) {
+		this.responded = responded;
+		this.response = response;
+	}
 
 }
