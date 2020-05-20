@@ -12,7 +12,7 @@ public class ClientResponse implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("response")
 	private java.lang.String response;
 
-	@org.kie.api.definition.type.Label(value = "responded")
+	@org.kie.api.definition.type.Label("responded")
 	private java.lang.Boolean responded;
 
 	public ClientResponse() {
@@ -32,6 +32,10 @@ public class ClientResponse implements java.io.Serializable {
 
 	public void setResponded(java.lang.Boolean responded) {
 		this.responded = responded;
+	}
+	
+	public java.lang.Boolean isResponded( {
+		return this.responded;
 	}
 
 	public ClientResponse(java.lang.String response, java.lang.Boolean responded) {
