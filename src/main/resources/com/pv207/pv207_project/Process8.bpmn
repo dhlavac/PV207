@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_oQN5MJq8EeqjC44el5mTow" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_6HWWAJrAEeqjC44el5mTow" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
   <bpmn2:itemDefinition id="_new_restaurantItem" structureRef="String"/>
   <bpmn2:itemDefinition id="_possible_clientItem" structureRef="Boolean"/>
   <bpmn2:itemDefinition id="_new_restaurant_emailItem" structureRef="String"/>
@@ -79,19 +79,6 @@
   <bpmn2:itemDefinition id="__F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_new_leadInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_New-lead-emailInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_possible_clientOutputXItem" structureRef="Boolean"/>
-  <bpmn2:itemDefinition id="__13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_SkippableInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_PriorityInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_CommentInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_DescriptionInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_CreatedByInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_TaskNameInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_GroupIdInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_ContentInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_NotStartedReassignInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_NotCompletedReassignInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_NotStartedNotifyInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_NotCompletedNotifyInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_Client-responseInputXItem" structureRef="com.pv207.pv207_project.ClientResponse"/>
   <bpmn2:process id="PV207-project.Process8" drools:packageName="com.pv207.pv207_project" drools:version="1.0" drools:adHoc="false" name="Process8" isExecutable="true" processType="Public">
     <bpmn2:property id="new_restaurant" itemSubjectRef="_new_restaurantItem" name="new_restaurant"/>
     <bpmn2:property id="possible_client" itemSubjectRef="_possible_clientItem" name="possible_client"/>
@@ -174,8 +161,8 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
         </drools:metaData>
       </bpmn2:extensionElements>
       <bpmn2:outgoing>_24170C64-DCF4-4A7B-8819-B2042070C900</bpmn2:outgoing>
-      <bpmn2:timerEventDefinition id="_oQN5MZq8EeqjC44el5mTow">
-        <bpmn2:timeDuration xsi:type="bpmn2:tFormalExpression" id="_oQN5Mpq8EeqjC44el5mTow">PT10S</bpmn2:timeDuration>
+      <bpmn2:timerEventDefinition id="_6HWWAZrAEeqjC44el5mTow">
+        <bpmn2:timeDuration xsi:type="bpmn2:tFormalExpression" id="_6HWWAprAEeqjC44el5mTow">PT10S</bpmn2:timeDuration>
       </bpmn2:timerEventDefinition>
     </bpmn2:startEvent>
     <bpmn2:subProcess id="_F4D89D39-6462-44FE-9F34-92ECB4D3AB6D" name="Reach out to client">
@@ -186,20 +173,13 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_0CD89759-C6F6-43FC-8998-7BC0BC56E466</bpmn2:incoming>
       <bpmn2:outgoing>_7F93F2C3-B404-49BE-AB0A-EE0A2AE77234</bpmn2:outgoing>
-      <bpmn2:sequenceFlow id="_742C9FD8-0276-4C11-9F8F-DA553A805474" sourceRef="_630341EE-2A80-4AA1-BF10-57F6BD931771" targetRef="_13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A">
-        <bpmn2:extensionElements>
-          <drools:metaData name="isAutoConnection.target">
-            <drools:metaValue><![CDATA[true]]></drools:metaValue>
-          </drools:metaData>
-        </bpmn2:extensionElements>
-      </bpmn2:sequenceFlow>
       <bpmn2:sequenceFlow id="_96B1B1D6-52E9-4132-8668-825E28A49F47" name="No" sourceRef="_A7667B2F-D3CF-4067-B8BB-C6E72685DCBA" targetRef="_5DB8E50D-F00C-41D2-8E87-1A015F2B73FD">
         <bpmn2:extensionElements>
           <drools:metaData name="elementname">
             <drools:metaValue><![CDATA[No]]></drools:metaValue>
           </drools:metaData>
         </bpmn2:extensionElements>
-        <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_oQN5M5q8EeqjC44el5mTow" language="http://www.java.com/java"><![CDATA[return KieFunctions.isFalse(possible_client);]]></bpmn2:conditionExpression>
+        <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_6HWWA5rAEeqjC44el5mTow" language="http://www.java.com/java"><![CDATA[return KieFunctions.isFalse(possible_client);]]></bpmn2:conditionExpression>
       </bpmn2:sequenceFlow>
       <bpmn2:sequenceFlow id="_DE9EEED2-B1D1-45EB-9677-95E460A0BC56" sourceRef="_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A" targetRef="_A7667B2F-D3CF-4067-B8BB-C6E72685DCBA"/>
       <bpmn2:sequenceFlow id="_2F3634AA-3641-4AC5-AAEB-9E699D3362FA" name="Yes" sourceRef="_A7667B2F-D3CF-4067-B8BB-C6E72685DCBA" targetRef="_6ACFE577-A83E-40ED-8D89-397F6FD02463">
@@ -208,7 +188,7 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
             <drools:metaValue><![CDATA[Yes]]></drools:metaValue>
           </drools:metaData>
         </bpmn2:extensionElements>
-        <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_oQN5NJq8EeqjC44el5mTow" language="http://www.java.com/java"><![CDATA[return KieFunctions.isTrue(possible_client);]]></bpmn2:conditionExpression>
+        <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_6HWWBJrAEeqjC44el5mTow" language="http://www.java.com/java"><![CDATA[return KieFunctions.isTrue(possible_client);]]></bpmn2:conditionExpression>
       </bpmn2:sequenceFlow>
       <bpmn2:sequenceFlow id="_E04B209B-A99F-42AC-B493-52AA77A32ECD" sourceRef="_3ECF5B9C-B89F-49AA-8D84-84A7CFF58316" targetRef="_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A">
         <bpmn2:extensionElements>
@@ -226,7 +206,7 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
             <drools:metaValue><![CDATA[No]]></drools:metaValue>
           </drools:metaData>
         </bpmn2:extensionElements>
-        <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_oQN5NZq8EeqjC44el5mTow" language="http://www.java.com/java"><![CDATA[return KieFunctions.isFalse(client_response.isResponded());]]></bpmn2:conditionExpression>
+        <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_6HWWBZrAEeqjC44el5mTow" language="http://www.java.com/java"><![CDATA[return KieFunctions.isFalse(client_response.isResponded());]]></bpmn2:conditionExpression>
       </bpmn2:sequenceFlow>
       <bpmn2:sequenceFlow id="_92F881F2-3C7D-4333-A7F3-4DE8B8B969FD" sourceRef="_00A277CC-63D0-4270-A1E1-C43613A56162" targetRef="_630341EE-2A80-4AA1-BF10-57F6BD931771">
         <bpmn2:extensionElements>
@@ -242,6 +222,15 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
           </drools:metaData>
         </bpmn2:extensionElements>
       </bpmn2:sequenceFlow>
+      <bpmn2:sequenceFlow id="_4987CC26-347A-44B0-A572-0B0A3574502F" name="No" sourceRef="_FEA2BEEA-08BD-43EB-BDFD-DFE5EABAF665" targetRef="_2F1C42FC-9B16-4F28-B4EB-26BA75EC3056">
+        <bpmn2:extensionElements>
+          <drools:metaData name="elementname">
+            <drools:metaValue><![CDATA[No]]></drools:metaValue>
+          </drools:metaData>
+        </bpmn2:extensionElements>
+        <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_6HWWBprAEeqjC44el5mTow" language="http://www.java.com/java"><![CDATA[return KieFunctions.isFalse(client_response.isResponded());]]></bpmn2:conditionExpression>
+      </bpmn2:sequenceFlow>
+      <bpmn2:sequenceFlow id="_742C9FD8-0276-4C11-9F8F-DA553A805474" sourceRef="_630341EE-2A80-4AA1-BF10-57F6BD931771" targetRef="_FEA2BEEA-08BD-43EB-BDFD-DFE5EABAF665"/>
       <bpmn2:sequenceFlow id="_5D9045D0-DE43-422A-B215-C20BFF16EE48" sourceRef="_6E694681-D7CD-4B37-8C85-94D9C43DB3F8" targetRef="_EE88FAEE-71C0-4498-8164-4893191ECCDD"/>
       <bpmn2:sequenceFlow id="_0E455A67-6009-4B9D-AFE7-01033EE5903F" sourceRef="_E98115B3-8896-46CC-BE23-F56803D110B6" targetRef="_6E694681-D7CD-4B37-8C85-94D9C43DB3F8">
         <bpmn2:extensionElements>
@@ -249,18 +238,7 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
             <drools:metaValue><![CDATA[true]]></drools:metaValue>
           </drools:metaData>
         </bpmn2:extensionElements>
-        <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_oQN5Npq8EeqjC44el5mTow" language="http://www.java.com/java"><![CDATA[return KieFunctions.isNull(client_response.isResponded());]]></bpmn2:conditionExpression>
-      </bpmn2:sequenceFlow>
-      <bpmn2:sequenceFlow id="_4987CC26-347A-44B0-A572-0B0A3574502F" name="No" sourceRef="_FEA2BEEA-08BD-43EB-BDFD-DFE5EABAF665" targetRef="_2F1C42FC-9B16-4F28-B4EB-26BA75EC3056">
-        <bpmn2:extensionElements>
-          <drools:metaData name="elementname">
-            <drools:metaValue><![CDATA[No]]></drools:metaValue>
-          </drools:metaData>
-        </bpmn2:extensionElements>
-        <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_oQN5N5q8EeqjC44el5mTow" language="http://www.java.com/java"><![CDATA[return KieFunctions.isFalse(client_response.isResponded());]]></bpmn2:conditionExpression>
-      </bpmn2:sequenceFlow>
-      <bpmn2:sequenceFlow id="_BC9ED7AA-977A-491A-ADF7-0874D94A89D7" sourceRef="_13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A" targetRef="_FEA2BEEA-08BD-43EB-BDFD-DFE5EABAF665">
-        <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_oQN5OJq8EeqjC44el5mTow" language="http://www.java.com/java"><![CDATA[return KieFunctions.isTrue(client_response.isResponded());]]></bpmn2:conditionExpression>
+        <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_6HWWB5rAEeqjC44el5mTow" language="http://www.java.com/java"><![CDATA[return KieFunctions.isNull(client_response.isResponded());]]></bpmn2:conditionExpression>
       </bpmn2:sequenceFlow>
       <bpmn2:sequenceFlow id="_1D218E1C-2635-493B-9F4F-8EF25AB90138" name="Yes" sourceRef="_FEA2BEEA-08BD-43EB-BDFD-DFE5EABAF665" targetRef="_6FB86A92-28B6-4104-B342-DB8FFFBF29D6">
         <bpmn2:extensionElements>
@@ -268,7 +246,7 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
             <drools:metaValue><![CDATA[Yes]]></drools:metaValue>
           </drools:metaData>
         </bpmn2:extensionElements>
-        <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_oQN5OZq8EeqjC44el5mTow" language="http://www.java.com/java"><![CDATA[return KieFunctions.isTrue(client_response.isResponded());]]></bpmn2:conditionExpression>
+        <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_6HWWCJrAEeqjC44el5mTow" language="http://www.java.com/java"><![CDATA[return KieFunctions.isTrue(client_response.isResponded());]]></bpmn2:conditionExpression>
       </bpmn2:sequenceFlow>
       <bpmn2:sequenceFlow id="_3747E5BA-C00B-4B59-9827-3938BE20A855" name="Yes" sourceRef="_EE88FAEE-71C0-4498-8164-4893191ECCDD" targetRef="_19416F3F-6494-492B-B96B-6A54A90DDAB2">
         <bpmn2:extensionElements>
@@ -276,7 +254,7 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
             <drools:metaValue><![CDATA[Yes]]></drools:metaValue>
           </drools:metaData>
         </bpmn2:extensionElements>
-        <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_oQN5Opq8EeqjC44el5mTow" language="http://www.java.com/java"><![CDATA[return KieFunctions.isTrue(client_response.isResponded());]]></bpmn2:conditionExpression>
+        <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_6HWWCZrAEeqjC44el5mTow" language="http://www.java.com/java"><![CDATA[return KieFunctions.isTrue(client_response.isResponded());]]></bpmn2:conditionExpression>
       </bpmn2:sequenceFlow>
       <bpmn2:exclusiveGateway id="_EE88FAEE-71C0-4498-8164-4893191ECCDD" drools:dg="_3747E5BA-C00B-4B59-9827-3938BE20A855" name="Was there response ?" gatewayDirection="Diverging" default="_3747E5BA-C00B-4B59-9827-3938BE20A855">
         <bpmn2:extensionElements>
@@ -288,49 +266,6 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
         <bpmn2:outgoing>_3747E5BA-C00B-4B59-9827-3938BE20A855</bpmn2:outgoing>
         <bpmn2:outgoing>_889BD562-107D-4E75-B318-647439D88527</bpmn2:outgoing>
       </bpmn2:exclusiveGateway>
-      <bpmn2:userTask id="_13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A" name="Task">
-        <bpmn2:extensionElements>
-          <drools:metaData name="elementname">
-            <drools:metaValue><![CDATA[Task]]></drools:metaValue>
-          </drools:metaData>
-        </bpmn2:extensionElements>
-        <bpmn2:incoming>_742C9FD8-0276-4C11-9F8F-DA553A805474</bpmn2:incoming>
-        <bpmn2:outgoing>_BC9ED7AA-977A-491A-ADF7-0874D94A89D7</bpmn2:outgoing>
-        <bpmn2:ioSpecification id="_oQN5O5q8EeqjC44el5mTow">
-          <bpmn2:dataInput id="_13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_TaskNameInputX" drools:dtype="Object" itemSubjectRef="__13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_TaskNameInputXItem" name="TaskName"/>
-          <bpmn2:dataInput id="_13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_Client-responseInputX" drools:dtype="com.pv207.pv207_project.ClientResponse" itemSubjectRef="__13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_Client-responseInputXItem" name="Client response"/>
-          <bpmn2:dataInput id="_13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_SkippableInputX" drools:dtype="Object" itemSubjectRef="__13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_SkippableInputXItem" name="Skippable"/>
-          <bpmn2:inputSet id="_oQN5PJq8EeqjC44el5mTow">
-            <bpmn2:dataInputRefs>_13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_TaskNameInputX</bpmn2:dataInputRefs>
-            <bpmn2:dataInputRefs>_13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_Client-responseInputX</bpmn2:dataInputRefs>
-            <bpmn2:dataInputRefs>_13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_SkippableInputX</bpmn2:dataInputRefs>
-          </bpmn2:inputSet>
-          <bpmn2:outputSet id="_oQN5PZq8EeqjC44el5mTow"/>
-        </bpmn2:ioSpecification>
-        <bpmn2:dataInputAssociation id="_oQN5Ppq8EeqjC44el5mTow">
-          <bpmn2:targetRef>_13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_TaskNameInputX</bpmn2:targetRef>
-          <bpmn2:assignment id="_oQN5P5q8EeqjC44el5mTow">
-            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_oQN5QJq8EeqjC44el5mTow"><![CDATA[TestTask]]></bpmn2:from>
-            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_oQN5QZq8EeqjC44el5mTow">_13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_TaskNameInputX</bpmn2:to>
-          </bpmn2:assignment>
-        </bpmn2:dataInputAssociation>
-        <bpmn2:dataInputAssociation id="_oQN5Qpq8EeqjC44el5mTow">
-          <bpmn2:sourceRef>client_response</bpmn2:sourceRef>
-          <bpmn2:targetRef>_13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_Client-responseInputX</bpmn2:targetRef>
-        </bpmn2:dataInputAssociation>
-        <bpmn2:dataInputAssociation id="_oQN5Q5q8EeqjC44el5mTow">
-          <bpmn2:targetRef>_13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_SkippableInputX</bpmn2:targetRef>
-          <bpmn2:assignment id="_oQN5RJq8EeqjC44el5mTow">
-            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_oQN5RZq8EeqjC44el5mTow"><![CDATA[false]]></bpmn2:from>
-            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_oQN5Rpq8EeqjC44el5mTow">_13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_SkippableInputX</bpmn2:to>
-          </bpmn2:assignment>
-        </bpmn2:dataInputAssociation>
-        <bpmn2:potentialOwner id="_f2b5e270-894c-45e6-bfc6-fa3b8ee451c3">
-          <bpmn2:resourceAssignmentExpression id="_oQN5R5q8EeqjC44el5mTow">
-            <bpmn2:formalExpression id="_oQN5SJq8EeqjC44el5mTow">wbadmin</bpmn2:formalExpression>
-          </bpmn2:resourceAssignmentExpression>
-        </bpmn2:potentialOwner>
-      </bpmn2:userTask>
       <bpmn2:userTask id="_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A" name="Review lead">
         <bpmn2:extensionElements>
           <drools:metaData name="elementname">
@@ -339,56 +274,64 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
         </bpmn2:extensionElements>
         <bpmn2:incoming>_E04B209B-A99F-42AC-B493-52AA77A32ECD</bpmn2:incoming>
         <bpmn2:outgoing>_DE9EEED2-B1D1-45EB-9677-95E460A0BC56</bpmn2:outgoing>
-        <bpmn2:ioSpecification id="_oQN5SZq8EeqjC44el5mTow">
+        <bpmn2:ioSpecification id="_6HWWCprAEeqjC44el5mTow">
           <bpmn2:dataInput id="_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_TaskNameInputX" drools:dtype="Object" itemSubjectRef="__F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_TaskNameInputXItem" name="TaskName"/>
           <bpmn2:dataInput id="_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_new_leadInputX" drools:dtype="String" itemSubjectRef="__F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_new_leadInputXItem" name="new_lead"/>
           <bpmn2:dataInput id="_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_New-lead-emailInputX" drools:dtype="String" itemSubjectRef="__F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_New-lead-emailInputXItem" name="New lead email"/>
           <bpmn2:dataInput id="_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_SkippableInputX" drools:dtype="Object" itemSubjectRef="__F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_SkippableInputXItem" name="Skippable"/>
           <bpmn2:dataOutput id="_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_possible_clientOutputX" drools:dtype="Boolean" itemSubjectRef="__F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_possible_clientOutputXItem" name="possible_client"/>
-          <bpmn2:inputSet id="_oQN5Spq8EeqjC44el5mTow">
+          <bpmn2:inputSet id="_6HWWC5rAEeqjC44el5mTow">
             <bpmn2:dataInputRefs>_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_TaskNameInputX</bpmn2:dataInputRefs>
             <bpmn2:dataInputRefs>_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_new_leadInputX</bpmn2:dataInputRefs>
             <bpmn2:dataInputRefs>_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_New-lead-emailInputX</bpmn2:dataInputRefs>
             <bpmn2:dataInputRefs>_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_SkippableInputX</bpmn2:dataInputRefs>
           </bpmn2:inputSet>
-          <bpmn2:outputSet id="_oQOgQJq8EeqjC44el5mTow">
+          <bpmn2:outputSet id="_6HWWDJrAEeqjC44el5mTow">
             <bpmn2:dataOutputRefs>_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_possible_clientOutputX</bpmn2:dataOutputRefs>
           </bpmn2:outputSet>
         </bpmn2:ioSpecification>
-        <bpmn2:dataInputAssociation id="_oQOgQZq8EeqjC44el5mTow">
+        <bpmn2:dataInputAssociation id="_6HWWDZrAEeqjC44el5mTow">
           <bpmn2:targetRef>_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_TaskNameInputX</bpmn2:targetRef>
-          <bpmn2:assignment id="_oQOgQpq8EeqjC44el5mTow">
-            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_oQOgQ5q8EeqjC44el5mTow"><![CDATA[ReviewLead]]></bpmn2:from>
-            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_oQOgRJq8EeqjC44el5mTow">_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_TaskNameInputX</bpmn2:to>
+          <bpmn2:assignment id="_6HWWDprAEeqjC44el5mTow">
+            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_6HWWD5rAEeqjC44el5mTow"><![CDATA[ReviewLead]]></bpmn2:from>
+            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_6HWWEJrAEeqjC44el5mTow">_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_TaskNameInputX</bpmn2:to>
           </bpmn2:assignment>
         </bpmn2:dataInputAssociation>
-        <bpmn2:dataInputAssociation id="_oQOgRZq8EeqjC44el5mTow">
+        <bpmn2:dataInputAssociation id="_6HWWEZrAEeqjC44el5mTow">
           <bpmn2:sourceRef>new_restaurant</bpmn2:sourceRef>
           <bpmn2:targetRef>_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_new_leadInputX</bpmn2:targetRef>
         </bpmn2:dataInputAssociation>
-        <bpmn2:dataInputAssociation id="_oQOgRpq8EeqjC44el5mTow">
+        <bpmn2:dataInputAssociation id="_6HWWEprAEeqjC44el5mTow">
           <bpmn2:sourceRef>new_restaurant_email</bpmn2:sourceRef>
           <bpmn2:targetRef>_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_New-lead-emailInputX</bpmn2:targetRef>
         </bpmn2:dataInputAssociation>
-        <bpmn2:dataInputAssociation id="_oQOgR5q8EeqjC44el5mTow">
+        <bpmn2:dataInputAssociation id="_6HWWE5rAEeqjC44el5mTow">
           <bpmn2:targetRef>_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_SkippableInputX</bpmn2:targetRef>
-          <bpmn2:assignment id="_oQOgSJq8EeqjC44el5mTow">
-            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_oQOgSZq8EeqjC44el5mTow"><![CDATA[false]]></bpmn2:from>
-            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_oQOgSpq8EeqjC44el5mTow">_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_SkippableInputX</bpmn2:to>
+          <bpmn2:assignment id="_6HWWFJrAEeqjC44el5mTow">
+            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_6HWWFZrAEeqjC44el5mTow"><![CDATA[false]]></bpmn2:from>
+            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_6HWWFprAEeqjC44el5mTow">_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_SkippableInputX</bpmn2:to>
           </bpmn2:assignment>
         </bpmn2:dataInputAssociation>
-        <bpmn2:dataOutputAssociation id="_oQOgS5q8EeqjC44el5mTow">
+        <bpmn2:dataOutputAssociation id="_6HWWF5rAEeqjC44el5mTow">
           <bpmn2:sourceRef>_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A_possible_clientOutputX</bpmn2:sourceRef>
           <bpmn2:targetRef>possible_client</bpmn2:targetRef>
         </bpmn2:dataOutputAssociation>
-        <bpmn2:potentialOwner id="_23b03bdb-adb7-401f-8027-73ce76605c19">
-          <bpmn2:resourceAssignmentExpression id="_oQOgTJq8EeqjC44el5mTow">
-            <bpmn2:formalExpression id="_oQOgTZq8EeqjC44el5mTow">wbadmin</bpmn2:formalExpression>
+        <bpmn2:potentialOwner id="_7d067536-918f-4e70-b3d6-193024015633">
+          <bpmn2:resourceAssignmentExpression id="_6HWWGJrAEeqjC44el5mTow">
+            <bpmn2:formalExpression id="_6HWWGZrAEeqjC44el5mTow">wbadmin</bpmn2:formalExpression>
           </bpmn2:resourceAssignmentExpression>
         </bpmn2:potentialOwner>
       </bpmn2:userTask>
+      <bpmn2:endEvent id="_2F1C42FC-9B16-4F28-B4EB-26BA75EC3056" name="Contact terminated">
+        <bpmn2:extensionElements>
+          <drools:metaData name="elementname">
+            <drools:metaValue><![CDATA[Contact terminated]]></drools:metaValue>
+          </drools:metaData>
+        </bpmn2:extensionElements>
+        <bpmn2:incoming>_4987CC26-347A-44B0-A572-0B0A3574502F</bpmn2:incoming>
+      </bpmn2:endEvent>
       <bpmn2:task id="_630341EE-2A80-4AA1-BF10-57F6BD931771" drools:taskName="Rest" name="Client response received">
-        <bpmn2:documentation id="_oQOgTpq8EeqjC44el5mTow"><![CDATA[jbpm-workitems-rest/index.html]]></bpmn2:documentation>
+        <bpmn2:documentation id="_6HWWGprAEeqjC44el5mTow"><![CDATA[jbpm-workitems-rest/index.html]]></bpmn2:documentation>
         <bpmn2:extensionElements>
           <drools:metaData name="elementname">
             <drools:metaValue><![CDATA[Client response received]]></drools:metaValue>
@@ -396,7 +339,7 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
         </bpmn2:extensionElements>
         <bpmn2:incoming>_92F881F2-3C7D-4333-A7F3-4DE8B8B969FD</bpmn2:incoming>
         <bpmn2:outgoing>_742C9FD8-0276-4C11-9F8F-DA553A805474</bpmn2:outgoing>
-        <bpmn2:ioSpecification id="_oQOgT5q8EeqjC44el5mTow">
+        <bpmn2:ioSpecification id="_6HWWG5rAEeqjC44el5mTow">
           <bpmn2:dataInput id="_630341EE-2A80-4AA1-BF10-57F6BD931771_MethodInputX" drools:dtype="String" itemSubjectRef="__630341EE-2A80-4AA1-BF10-57F6BD931771_MethodInputXItem" name="Method"/>
           <bpmn2:dataInput id="_630341EE-2A80-4AA1-BF10-57F6BD931771_ResultClassInputX" drools:dtype="String" itemSubjectRef="__630341EE-2A80-4AA1-BF10-57F6BD931771_ResultClassInputXItem" name="ResultClass"/>
           <bpmn2:dataInput id="_630341EE-2A80-4AA1-BF10-57F6BD931771_UrlInputX" drools:dtype="String" itemSubjectRef="__630341EE-2A80-4AA1-BF10-57F6BD931771_UrlInputXItem" name="Url"/>
@@ -415,7 +358,7 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
           <bpmn2:dataInput id="_630341EE-2A80-4AA1-BF10-57F6BD931771_UsernameInputX" drools:dtype="String" itemSubjectRef="__630341EE-2A80-4AA1-BF10-57F6BD931771_UsernameInputXItem" name="Username"/>
           <bpmn2:dataInput id="_630341EE-2A80-4AA1-BF10-57F6BD931771_TaskNameInputX" drools:dtype="Object" name="TaskName"/>
           <bpmn2:dataOutput id="_630341EE-2A80-4AA1-BF10-57F6BD931771_ResultOutputX" drools:dtype="com.pv207.pv207_project.ClientResponse" itemSubjectRef="__630341EE-2A80-4AA1-BF10-57F6BD931771_ResultOutputXItem" name="Result"/>
-          <bpmn2:inputSet id="_oQOgUJq8EeqjC44el5mTow">
+          <bpmn2:inputSet id="_6HWWHJrAEeqjC44el5mTow">
             <bpmn2:dataInputRefs>_630341EE-2A80-4AA1-BF10-57F6BD931771_MethodInputX</bpmn2:dataInputRefs>
             <bpmn2:dataInputRefs>_630341EE-2A80-4AA1-BF10-57F6BD931771_ResultClassInputX</bpmn2:dataInputRefs>
             <bpmn2:dataInputRefs>_630341EE-2A80-4AA1-BF10-57F6BD931771_UrlInputX</bpmn2:dataInputRefs>
@@ -434,51 +377,43 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
             <bpmn2:dataInputRefs>_630341EE-2A80-4AA1-BF10-57F6BD931771_UsernameInputX</bpmn2:dataInputRefs>
             <bpmn2:dataInputRefs>_630341EE-2A80-4AA1-BF10-57F6BD931771_TaskNameInputX</bpmn2:dataInputRefs>
           </bpmn2:inputSet>
-          <bpmn2:outputSet id="_oQOgUZq8EeqjC44el5mTow">
+          <bpmn2:outputSet id="_6HWWHZrAEeqjC44el5mTow">
             <bpmn2:dataOutputRefs>_630341EE-2A80-4AA1-BF10-57F6BD931771_ResultOutputX</bpmn2:dataOutputRefs>
           </bpmn2:outputSet>
         </bpmn2:ioSpecification>
-        <bpmn2:dataInputAssociation id="_oQOgUpq8EeqjC44el5mTow">
+        <bpmn2:dataInputAssociation id="_6HWWHprAEeqjC44el5mTow">
           <bpmn2:targetRef>_630341EE-2A80-4AA1-BF10-57F6BD931771_MethodInputX</bpmn2:targetRef>
-          <bpmn2:assignment id="_oQOgU5q8EeqjC44el5mTow">
-            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_oQOgVJq8EeqjC44el5mTow"><![CDATA[GET]]></bpmn2:from>
-            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_oQOgVZq8EeqjC44el5mTow">_630341EE-2A80-4AA1-BF10-57F6BD931771_MethodInputX</bpmn2:to>
+          <bpmn2:assignment id="_6HWWH5rAEeqjC44el5mTow">
+            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_6HWWIJrAEeqjC44el5mTow"><![CDATA[GET]]></bpmn2:from>
+            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_6HWWIZrAEeqjC44el5mTow">_630341EE-2A80-4AA1-BF10-57F6BD931771_MethodInputX</bpmn2:to>
           </bpmn2:assignment>
         </bpmn2:dataInputAssociation>
-        <bpmn2:dataInputAssociation id="_oQOgVpq8EeqjC44el5mTow">
+        <bpmn2:dataInputAssociation id="_6HWWIprAEeqjC44el5mTow">
           <bpmn2:targetRef>_630341EE-2A80-4AA1-BF10-57F6BD931771_ResultClassInputX</bpmn2:targetRef>
-          <bpmn2:assignment id="_oQOgV5q8EeqjC44el5mTow">
-            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_oQOgWJq8EeqjC44el5mTow"><![CDATA[com.pv207.pv207_project.ClientResponse]]></bpmn2:from>
-            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_oQOgWZq8EeqjC44el5mTow">_630341EE-2A80-4AA1-BF10-57F6BD931771_ResultClassInputX</bpmn2:to>
+          <bpmn2:assignment id="_6HWWI5rAEeqjC44el5mTow">
+            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_6HWWJJrAEeqjC44el5mTow"><![CDATA[com.pv207.pv207_project.ClientResponse]]></bpmn2:from>
+            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_6HWWJZrAEeqjC44el5mTow">_630341EE-2A80-4AA1-BF10-57F6BD931771_ResultClassInputX</bpmn2:to>
           </bpmn2:assignment>
         </bpmn2:dataInputAssociation>
-        <bpmn2:dataInputAssociation id="_oQOgWpq8EeqjC44el5mTow">
+        <bpmn2:dataInputAssociation id="_6HWWJprAEeqjC44el5mTow">
           <bpmn2:targetRef>_630341EE-2A80-4AA1-BF10-57F6BD931771_UrlInputX</bpmn2:targetRef>
-          <bpmn2:assignment id="_oQOgW5q8EeqjC44el5mTow">
-            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_oQOgXJq8EeqjC44el5mTow"><![CDATA[http://www.mocky.io/v2/5ec553242f0000d7c7dc3184]]></bpmn2:from>
-            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_oQOgXZq8EeqjC44el5mTow">_630341EE-2A80-4AA1-BF10-57F6BD931771_UrlInputX</bpmn2:to>
+          <bpmn2:assignment id="_6HWWJ5rAEeqjC44el5mTow">
+            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_6HWWKJrAEeqjC44el5mTow"><![CDATA[http://www.mocky.io/v2/5ec553242f0000d7c7dc3184]]></bpmn2:from>
+            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_6HWWKZrAEeqjC44el5mTow">_630341EE-2A80-4AA1-BF10-57F6BD931771_UrlInputX</bpmn2:to>
           </bpmn2:assignment>
         </bpmn2:dataInputAssociation>
-        <bpmn2:dataInputAssociation id="_oQOgXpq8EeqjC44el5mTow">
+        <bpmn2:dataInputAssociation id="_6HWWKprAEeqjC44el5mTow">
           <bpmn2:targetRef>_630341EE-2A80-4AA1-BF10-57F6BD931771_TaskNameInputX</bpmn2:targetRef>
-          <bpmn2:assignment id="_oQOgX5q8EeqjC44el5mTow">
-            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_oQOgYJq8EeqjC44el5mTow"><![CDATA[Rest]]></bpmn2:from>
-            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_oQOgYZq8EeqjC44el5mTow">_630341EE-2A80-4AA1-BF10-57F6BD931771_TaskNameInputX</bpmn2:to>
+          <bpmn2:assignment id="_6HWWK5rAEeqjC44el5mTow">
+            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_6HWWLJrAEeqjC44el5mTow"><![CDATA[Rest]]></bpmn2:from>
+            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_6HWWLZrAEeqjC44el5mTow">_630341EE-2A80-4AA1-BF10-57F6BD931771_TaskNameInputX</bpmn2:to>
           </bpmn2:assignment>
         </bpmn2:dataInputAssociation>
-        <bpmn2:dataOutputAssociation id="_oQOgYpq8EeqjC44el5mTow">
+        <bpmn2:dataOutputAssociation id="_6HWWLprAEeqjC44el5mTow">
           <bpmn2:sourceRef>_630341EE-2A80-4AA1-BF10-57F6BD931771_ResultOutputX</bpmn2:sourceRef>
           <bpmn2:targetRef>client_response</bpmn2:targetRef>
         </bpmn2:dataOutputAssociation>
       </bpmn2:task>
-      <bpmn2:endEvent id="_2F1C42FC-9B16-4F28-B4EB-26BA75EC3056" name="Contact terminated">
-        <bpmn2:extensionElements>
-          <drools:metaData name="elementname">
-            <drools:metaValue><![CDATA[Contact terminated]]></drools:metaValue>
-          </drools:metaData>
-        </bpmn2:extensionElements>
-        <bpmn2:incoming>_4987CC26-347A-44B0-A572-0B0A3574502F</bpmn2:incoming>
-      </bpmn2:endEvent>
       <bpmn2:endEvent id="_5DB8E50D-F00C-41D2-8E87-1A015F2B73FD" name="Contact terminated">
         <bpmn2:extensionElements>
           <drools:metaData name="elementname">
@@ -505,57 +440,57 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
         </bpmn2:extensionElements>
         <bpmn2:incoming>_2F3634AA-3641-4AC5-AAEB-9E699D3362FA</bpmn2:incoming>
         <bpmn2:outgoing>_81AF7ACC-7EF6-4F2F-8AF0-96D1830FF13D</bpmn2:outgoing>
-        <bpmn2:ioSpecification id="_oQOgY5q8EeqjC44el5mTow">
+        <bpmn2:ioSpecification id="_6HWWL5rAEeqjC44el5mTow">
           <bpmn2:dataInput id="_6ACFE577-A83E-40ED-8D89-397F6FD02463_TaskNameInputX" drools:dtype="Object" itemSubjectRef="__6ACFE577-A83E-40ED-8D89-397F6FD02463_TaskNameInputXItem" name="TaskName"/>
           <bpmn2:dataInput id="_6ACFE577-A83E-40ED-8D89-397F6FD02463_Potential-clientInputX" drools:dtype="String" itemSubjectRef="__6ACFE577-A83E-40ED-8D89-397F6FD02463_Potential-clientInputXItem" name="Potential client"/>
           <bpmn2:dataInput id="_6ACFE577-A83E-40ED-8D89-397F6FD02463_Client-emailInputX" drools:dtype="String" itemSubjectRef="__6ACFE577-A83E-40ED-8D89-397F6FD02463_Client-emailInputXItem" name="Client email"/>
           <bpmn2:dataInput id="_6ACFE577-A83E-40ED-8D89-397F6FD02463_SkippableInputX" drools:dtype="Object" itemSubjectRef="__6ACFE577-A83E-40ED-8D89-397F6FD02463_SkippableInputXItem" name="Skippable"/>
           <bpmn2:dataOutput id="_6ACFE577-A83E-40ED-8D89-397F6FD02463_Email-subjectOutputX" drools:dtype="String" itemSubjectRef="__6ACFE577-A83E-40ED-8D89-397F6FD02463_Email-subjectOutputXItem" name="Email subject"/>
           <bpmn2:dataOutput id="_6ACFE577-A83E-40ED-8D89-397F6FD02463_Email-bodyOutputX" drools:dtype="String" itemSubjectRef="__6ACFE577-A83E-40ED-8D89-397F6FD02463_Email-bodyOutputXItem" name="Email body"/>
-          <bpmn2:inputSet id="_oQOgZJq8EeqjC44el5mTow">
+          <bpmn2:inputSet id="_6HWWMJrAEeqjC44el5mTow">
             <bpmn2:dataInputRefs>_6ACFE577-A83E-40ED-8D89-397F6FD02463_TaskNameInputX</bpmn2:dataInputRefs>
             <bpmn2:dataInputRefs>_6ACFE577-A83E-40ED-8D89-397F6FD02463_Potential-clientInputX</bpmn2:dataInputRefs>
             <bpmn2:dataInputRefs>_6ACFE577-A83E-40ED-8D89-397F6FD02463_Client-emailInputX</bpmn2:dataInputRefs>
             <bpmn2:dataInputRefs>_6ACFE577-A83E-40ED-8D89-397F6FD02463_SkippableInputX</bpmn2:dataInputRefs>
           </bpmn2:inputSet>
-          <bpmn2:outputSet id="_oQOgZZq8EeqjC44el5mTow">
+          <bpmn2:outputSet id="_6HWWMZrAEeqjC44el5mTow">
             <bpmn2:dataOutputRefs>_6ACFE577-A83E-40ED-8D89-397F6FD02463_Email-subjectOutputX</bpmn2:dataOutputRefs>
             <bpmn2:dataOutputRefs>_6ACFE577-A83E-40ED-8D89-397F6FD02463_Email-bodyOutputX</bpmn2:dataOutputRefs>
           </bpmn2:outputSet>
         </bpmn2:ioSpecification>
-        <bpmn2:dataInputAssociation id="_oQOgZpq8EeqjC44el5mTow">
+        <bpmn2:dataInputAssociation id="_6HWWMprAEeqjC44el5mTow">
           <bpmn2:targetRef>_6ACFE577-A83E-40ED-8D89-397F6FD02463_TaskNameInputX</bpmn2:targetRef>
-          <bpmn2:assignment id="_oQOgZ5q8EeqjC44el5mTow">
-            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_oQOgaJq8EeqjC44el5mTow"><![CDATA[CreateEmail]]></bpmn2:from>
-            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_oQOgaZq8EeqjC44el5mTow">_6ACFE577-A83E-40ED-8D89-397F6FD02463_TaskNameInputX</bpmn2:to>
+          <bpmn2:assignment id="_6HWWM5rAEeqjC44el5mTow">
+            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_6HWWNJrAEeqjC44el5mTow"><![CDATA[CreateEmail]]></bpmn2:from>
+            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_6HWWNZrAEeqjC44el5mTow">_6ACFE577-A83E-40ED-8D89-397F6FD02463_TaskNameInputX</bpmn2:to>
           </bpmn2:assignment>
         </bpmn2:dataInputAssociation>
-        <bpmn2:dataInputAssociation id="_oQOgapq8EeqjC44el5mTow">
+        <bpmn2:dataInputAssociation id="_6HWWNprAEeqjC44el5mTow">
           <bpmn2:sourceRef>new_restaurant</bpmn2:sourceRef>
           <bpmn2:targetRef>_6ACFE577-A83E-40ED-8D89-397F6FD02463_Potential-clientInputX</bpmn2:targetRef>
         </bpmn2:dataInputAssociation>
-        <bpmn2:dataInputAssociation id="_oQOga5q8EeqjC44el5mTow">
+        <bpmn2:dataInputAssociation id="_6HWWN5rAEeqjC44el5mTow">
           <bpmn2:sourceRef>new_restaurant_email</bpmn2:sourceRef>
           <bpmn2:targetRef>_6ACFE577-A83E-40ED-8D89-397F6FD02463_Client-emailInputX</bpmn2:targetRef>
         </bpmn2:dataInputAssociation>
-        <bpmn2:dataInputAssociation id="_oQOgbJq8EeqjC44el5mTow">
+        <bpmn2:dataInputAssociation id="_6HWWOJrAEeqjC44el5mTow">
           <bpmn2:targetRef>_6ACFE577-A83E-40ED-8D89-397F6FD02463_SkippableInputX</bpmn2:targetRef>
-          <bpmn2:assignment id="_oQOgbZq8EeqjC44el5mTow">
-            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_oQOgbpq8EeqjC44el5mTow"><![CDATA[false]]></bpmn2:from>
-            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_oQOgb5q8EeqjC44el5mTow">_6ACFE577-A83E-40ED-8D89-397F6FD02463_SkippableInputX</bpmn2:to>
+          <bpmn2:assignment id="_6HWWOZrAEeqjC44el5mTow">
+            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_6HWWOprAEeqjC44el5mTow"><![CDATA[false]]></bpmn2:from>
+            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_6HWWO5rAEeqjC44el5mTow">_6ACFE577-A83E-40ED-8D89-397F6FD02463_SkippableInputX</bpmn2:to>
           </bpmn2:assignment>
         </bpmn2:dataInputAssociation>
-        <bpmn2:dataOutputAssociation id="_oQOgcJq8EeqjC44el5mTow">
+        <bpmn2:dataOutputAssociation id="_6HWWPJrAEeqjC44el5mTow">
           <bpmn2:sourceRef>_6ACFE577-A83E-40ED-8D89-397F6FD02463_Email-subjectOutputX</bpmn2:sourceRef>
           <bpmn2:targetRef>email_subject</bpmn2:targetRef>
         </bpmn2:dataOutputAssociation>
-        <bpmn2:dataOutputAssociation id="_oQOgcZq8EeqjC44el5mTow">
+        <bpmn2:dataOutputAssociation id="_6HWWPZrAEeqjC44el5mTow">
           <bpmn2:sourceRef>_6ACFE577-A83E-40ED-8D89-397F6FD02463_Email-bodyOutputX</bpmn2:sourceRef>
           <bpmn2:targetRef>email_body</bpmn2:targetRef>
         </bpmn2:dataOutputAssociation>
-        <bpmn2:potentialOwner id="_c1a9e767-4370-4297-b41d-66274a7486b2">
-          <bpmn2:resourceAssignmentExpression id="_oQOgcpq8EeqjC44el5mTow">
-            <bpmn2:formalExpression id="_oQOgc5q8EeqjC44el5mTow">wbadmin</bpmn2:formalExpression>
+        <bpmn2:potentialOwner id="_af73099a-7e4a-4841-b156-4dc0d6e0861a">
+          <bpmn2:resourceAssignmentExpression id="_6HWWPprAEeqjC44el5mTow">
+            <bpmn2:formalExpression id="_6HWWP5rAEeqjC44el5mTow">wbadmin</bpmn2:formalExpression>
           </bpmn2:resourceAssignmentExpression>
         </bpmn2:potentialOwner>
       </bpmn2:userTask>
@@ -571,7 +506,7 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
         <bpmn2:incoming>_889BD562-107D-4E75-B318-647439D88527</bpmn2:incoming>
       </bpmn2:endEvent>
       <bpmn2:task id="_00A277CC-63D0-4270-A1E1-C43613A56162" drools:taskName="Email" name="Client contacted">
-        <bpmn2:documentation id="_oQOgdJq8EeqjC44el5mTow"><![CDATA[jbpm-workitems-email/index.html]]></bpmn2:documentation>
+        <bpmn2:documentation id="_6HWWQJrAEeqjC44el5mTow"><![CDATA[jbpm-workitems-email/index.html]]></bpmn2:documentation>
         <bpmn2:extensionElements>
           <drools:metaData name="elementname">
             <drools:metaValue><![CDATA[Client contacted]]></drools:metaValue>
@@ -579,7 +514,7 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
         </bpmn2:extensionElements>
         <bpmn2:incoming>_81AF7ACC-7EF6-4F2F-8AF0-96D1830FF13D</bpmn2:incoming>
         <bpmn2:outgoing>_92F881F2-3C7D-4333-A7F3-4DE8B8B969FD</bpmn2:outgoing>
-        <bpmn2:ioSpecification id="_oQOgdZq8EeqjC44el5mTow">
+        <bpmn2:ioSpecification id="_6HWWQZrAEeqjC44el5mTow">
           <bpmn2:dataInput id="_00A277CC-63D0-4270-A1E1-C43613A56162_AttachmentsInputX" drools:dtype="String" itemSubjectRef="__00A277CC-63D0-4270-A1E1-C43613A56162_AttachmentsInputXItem" name="Attachments"/>
           <bpmn2:dataInput id="_00A277CC-63D0-4270-A1E1-C43613A56162_BccInputX" drools:dtype="String" itemSubjectRef="__00A277CC-63D0-4270-A1E1-C43613A56162_BccInputXItem" name="Bcc"/>
           <bpmn2:dataInput id="_00A277CC-63D0-4270-A1E1-C43613A56162_BodyInputX" drools:dtype="String" itemSubjectRef="__00A277CC-63D0-4270-A1E1-C43613A56162_BodyInputXItem" name="Body"/>
@@ -591,7 +526,7 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
           <bpmn2:dataInput id="_00A277CC-63D0-4270-A1E1-C43613A56162_TemplateInputX" drools:dtype="String" itemSubjectRef="__00A277CC-63D0-4270-A1E1-C43613A56162_TemplateInputXItem" name="Template"/>
           <bpmn2:dataInput id="_00A277CC-63D0-4270-A1E1-C43613A56162_ToInputX" drools:dtype="String" itemSubjectRef="__00A277CC-63D0-4270-A1E1-C43613A56162_ToInputXItem" name="To"/>
           <bpmn2:dataInput id="_00A277CC-63D0-4270-A1E1-C43613A56162_TaskNameInputX" drools:dtype="Object" name="TaskName"/>
-          <bpmn2:inputSet id="_oQOgdpq8EeqjC44el5mTow">
+          <bpmn2:inputSet id="_6HWWQprAEeqjC44el5mTow">
             <bpmn2:dataInputRefs>_00A277CC-63D0-4270-A1E1-C43613A56162_AttachmentsInputX</bpmn2:dataInputRefs>
             <bpmn2:dataInputRefs>_00A277CC-63D0-4270-A1E1-C43613A56162_BccInputX</bpmn2:dataInputRefs>
             <bpmn2:dataInputRefs>_00A277CC-63D0-4270-A1E1-C43613A56162_BodyInputX</bpmn2:dataInputRefs>
@@ -604,32 +539,42 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
             <bpmn2:dataInputRefs>_00A277CC-63D0-4270-A1E1-C43613A56162_ToInputX</bpmn2:dataInputRefs>
             <bpmn2:dataInputRefs>_00A277CC-63D0-4270-A1E1-C43613A56162_TaskNameInputX</bpmn2:dataInputRefs>
           </bpmn2:inputSet>
-          <bpmn2:outputSet id="_oQOgd5q8EeqjC44el5mTow"/>
+          <bpmn2:outputSet id="_6HWWQ5rAEeqjC44el5mTow"/>
         </bpmn2:ioSpecification>
-        <bpmn2:dataInputAssociation id="_oQOgeJq8EeqjC44el5mTow">
+        <bpmn2:dataInputAssociation id="_6HWWRJrAEeqjC44el5mTow">
           <bpmn2:sourceRef>email_body</bpmn2:sourceRef>
           <bpmn2:targetRef>_00A277CC-63D0-4270-A1E1-C43613A56162_BodyInputX</bpmn2:targetRef>
         </bpmn2:dataInputAssociation>
-        <bpmn2:dataInputAssociation id="_oQOgeZq8EeqjC44el5mTow">
+        <bpmn2:dataInputAssociation id="_6HWWRZrAEeqjC44el5mTow">
           <bpmn2:sourceRef>new_restaurant_email</bpmn2:sourceRef>
           <bpmn2:targetRef>_00A277CC-63D0-4270-A1E1-C43613A56162_FromInputX</bpmn2:targetRef>
         </bpmn2:dataInputAssociation>
-        <bpmn2:dataInputAssociation id="_oQOgepq8EeqjC44el5mTow">
+        <bpmn2:dataInputAssociation id="_6HWWRprAEeqjC44el5mTow">
           <bpmn2:sourceRef>email_subject</bpmn2:sourceRef>
           <bpmn2:targetRef>_00A277CC-63D0-4270-A1E1-C43613A56162_SubjectInputX</bpmn2:targetRef>
         </bpmn2:dataInputAssociation>
-        <bpmn2:dataInputAssociation id="_oQOge5q8EeqjC44el5mTow">
+        <bpmn2:dataInputAssociation id="_6HWWR5rAEeqjC44el5mTow">
           <bpmn2:sourceRef>new_restaurant_email</bpmn2:sourceRef>
           <bpmn2:targetRef>_00A277CC-63D0-4270-A1E1-C43613A56162_ToInputX</bpmn2:targetRef>
         </bpmn2:dataInputAssociation>
-        <bpmn2:dataInputAssociation id="_oQOgfJq8EeqjC44el5mTow">
+        <bpmn2:dataInputAssociation id="_6HWWSJrAEeqjC44el5mTow">
           <bpmn2:targetRef>_00A277CC-63D0-4270-A1E1-C43613A56162_TaskNameInputX</bpmn2:targetRef>
-          <bpmn2:assignment id="_oQOgfZq8EeqjC44el5mTow">
-            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_oQOgfpq8EeqjC44el5mTow"><![CDATA[Email]]></bpmn2:from>
-            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_oQOgf5q8EeqjC44el5mTow">_00A277CC-63D0-4270-A1E1-C43613A56162_TaskNameInputX</bpmn2:to>
+          <bpmn2:assignment id="_6HWWSZrAEeqjC44el5mTow">
+            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_6HWWSprAEeqjC44el5mTow"><![CDATA[Email]]></bpmn2:from>
+            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_6HWWS5rAEeqjC44el5mTow">_00A277CC-63D0-4270-A1E1-C43613A56162_TaskNameInputX</bpmn2:to>
           </bpmn2:assignment>
         </bpmn2:dataInputAssociation>
       </bpmn2:task>
+      <bpmn2:exclusiveGateway id="_FEA2BEEA-08BD-43EB-BDFD-DFE5EABAF665" drools:dg="_1D218E1C-2635-493B-9F4F-8EF25AB90138" name="Proposition successful ?" gatewayDirection="Diverging" default="_1D218E1C-2635-493B-9F4F-8EF25AB90138">
+        <bpmn2:extensionElements>
+          <drools:metaData name="elementname">
+            <drools:metaValue><![CDATA[Proposition successful ?]]></drools:metaValue>
+          </drools:metaData>
+        </bpmn2:extensionElements>
+        <bpmn2:incoming>_742C9FD8-0276-4C11-9F8F-DA553A805474</bpmn2:incoming>
+        <bpmn2:outgoing>_1D218E1C-2635-493B-9F4F-8EF25AB90138</bpmn2:outgoing>
+        <bpmn2:outgoing>_4987CC26-347A-44B0-A572-0B0A3574502F</bpmn2:outgoing>
+      </bpmn2:exclusiveGateway>
       <bpmn2:userTask id="_6E694681-D7CD-4B37-8C85-94D9C43DB3F8" name="Call Client">
         <bpmn2:extensionElements>
           <drools:metaData name="elementname">
@@ -638,58 +583,48 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
         </bpmn2:extensionElements>
         <bpmn2:incoming>_0E455A67-6009-4B9D-AFE7-01033EE5903F</bpmn2:incoming>
         <bpmn2:outgoing>_5D9045D0-DE43-422A-B215-C20BFF16EE48</bpmn2:outgoing>
-        <bpmn2:ioSpecification id="_oQOggJq8EeqjC44el5mTow">
+        <bpmn2:ioSpecification id="_6HWWTJrAEeqjC44el5mTow">
           <bpmn2:dataInput id="_6E694681-D7CD-4B37-8C85-94D9C43DB3F8_TaskNameInputX" drools:dtype="Object" itemSubjectRef="__6E694681-D7CD-4B37-8C85-94D9C43DB3F8_TaskNameInputXItem" name="TaskName"/>
           <bpmn2:dataInput id="_6E694681-D7CD-4B37-8C85-94D9C43DB3F8_New-clientInputX" drools:dtype="String" itemSubjectRef="__6E694681-D7CD-4B37-8C85-94D9C43DB3F8_New-clientInputXItem" name="New client"/>
           <bpmn2:dataInput id="_6E694681-D7CD-4B37-8C85-94D9C43DB3F8_SkippableInputX" drools:dtype="Object" itemSubjectRef="__6E694681-D7CD-4B37-8C85-94D9C43DB3F8_SkippableInputXItem" name="Skippable"/>
           <bpmn2:dataOutput id="_6E694681-D7CD-4B37-8C85-94D9C43DB3F8_Call-resultOutputX" drools:dtype="com.pv207.pv207_project.ClientResponse" itemSubjectRef="__6E694681-D7CD-4B37-8C85-94D9C43DB3F8_Call-resultOutputXItem" name="Call result"/>
-          <bpmn2:inputSet id="_oQOggZq8EeqjC44el5mTow">
+          <bpmn2:inputSet id="_6HWWTZrAEeqjC44el5mTow">
             <bpmn2:dataInputRefs>_6E694681-D7CD-4B37-8C85-94D9C43DB3F8_TaskNameInputX</bpmn2:dataInputRefs>
             <bpmn2:dataInputRefs>_6E694681-D7CD-4B37-8C85-94D9C43DB3F8_New-clientInputX</bpmn2:dataInputRefs>
             <bpmn2:dataInputRefs>_6E694681-D7CD-4B37-8C85-94D9C43DB3F8_SkippableInputX</bpmn2:dataInputRefs>
           </bpmn2:inputSet>
-          <bpmn2:outputSet id="_oQOggpq8EeqjC44el5mTow">
+          <bpmn2:outputSet id="_6HWWTprAEeqjC44el5mTow">
             <bpmn2:dataOutputRefs>_6E694681-D7CD-4B37-8C85-94D9C43DB3F8_Call-resultOutputX</bpmn2:dataOutputRefs>
           </bpmn2:outputSet>
         </bpmn2:ioSpecification>
-        <bpmn2:dataInputAssociation id="_oQOgg5q8EeqjC44el5mTow">
+        <bpmn2:dataInputAssociation id="_6HWWT5rAEeqjC44el5mTow">
           <bpmn2:targetRef>_6E694681-D7CD-4B37-8C85-94D9C43DB3F8_TaskNameInputX</bpmn2:targetRef>
-          <bpmn2:assignment id="_oQOghJq8EeqjC44el5mTow">
-            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_oQOghZq8EeqjC44el5mTow"><![CDATA[Task]]></bpmn2:from>
-            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_oQOghpq8EeqjC44el5mTow">_6E694681-D7CD-4B37-8C85-94D9C43DB3F8_TaskNameInputX</bpmn2:to>
+          <bpmn2:assignment id="_6HWWUJrAEeqjC44el5mTow">
+            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_6HWWUZrAEeqjC44el5mTow"><![CDATA[Task]]></bpmn2:from>
+            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_6HWWUprAEeqjC44el5mTow">_6E694681-D7CD-4B37-8C85-94D9C43DB3F8_TaskNameInputX</bpmn2:to>
           </bpmn2:assignment>
         </bpmn2:dataInputAssociation>
-        <bpmn2:dataInputAssociation id="_oQOgh5q8EeqjC44el5mTow">
+        <bpmn2:dataInputAssociation id="_6HWWU5rAEeqjC44el5mTow">
           <bpmn2:sourceRef>new_restaurant</bpmn2:sourceRef>
           <bpmn2:targetRef>_6E694681-D7CD-4B37-8C85-94D9C43DB3F8_New-clientInputX</bpmn2:targetRef>
         </bpmn2:dataInputAssociation>
-        <bpmn2:dataInputAssociation id="_oQOgiJq8EeqjC44el5mTow">
+        <bpmn2:dataInputAssociation id="_6HWWVJrAEeqjC44el5mTow">
           <bpmn2:targetRef>_6E694681-D7CD-4B37-8C85-94D9C43DB3F8_SkippableInputX</bpmn2:targetRef>
-          <bpmn2:assignment id="_oQOgiZq8EeqjC44el5mTow">
-            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_oQOgipq8EeqjC44el5mTow"><![CDATA[false]]></bpmn2:from>
-            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_oQOgi5q8EeqjC44el5mTow">_6E694681-D7CD-4B37-8C85-94D9C43DB3F8_SkippableInputX</bpmn2:to>
+          <bpmn2:assignment id="_6HWWVZrAEeqjC44el5mTow">
+            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_6HWWVprAEeqjC44el5mTow"><![CDATA[false]]></bpmn2:from>
+            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_6HWWV5rAEeqjC44el5mTow">_6E694681-D7CD-4B37-8C85-94D9C43DB3F8_SkippableInputX</bpmn2:to>
           </bpmn2:assignment>
         </bpmn2:dataInputAssociation>
-        <bpmn2:dataOutputAssociation id="_oQOgjJq8EeqjC44el5mTow">
+        <bpmn2:dataOutputAssociation id="_6HWWWJrAEeqjC44el5mTow">
           <bpmn2:sourceRef>_6E694681-D7CD-4B37-8C85-94D9C43DB3F8_Call-resultOutputX</bpmn2:sourceRef>
           <bpmn2:targetRef>client_response</bpmn2:targetRef>
         </bpmn2:dataOutputAssociation>
-        <bpmn2:potentialOwner id="_1018f1e0-df41-4e18-9143-9bbf90f928bf">
-          <bpmn2:resourceAssignmentExpression id="_oQOgjZq8EeqjC44el5mTow">
-            <bpmn2:formalExpression id="_oQOgjpq8EeqjC44el5mTow">wbadmin</bpmn2:formalExpression>
+        <bpmn2:potentialOwner id="_dd7d922b-2e1b-4676-bed8-285fd043f759">
+          <bpmn2:resourceAssignmentExpression id="_6HWWWZrAEeqjC44el5mTow">
+            <bpmn2:formalExpression id="_6HWWWprAEeqjC44el5mTow">wbadmin</bpmn2:formalExpression>
           </bpmn2:resourceAssignmentExpression>
         </bpmn2:potentialOwner>
       </bpmn2:userTask>
-      <bpmn2:exclusiveGateway id="_FEA2BEEA-08BD-43EB-BDFD-DFE5EABAF665" drools:dg="_1D218E1C-2635-493B-9F4F-8EF25AB90138" name="Proposition successful ?" gatewayDirection="Diverging" default="_1D218E1C-2635-493B-9F4F-8EF25AB90138">
-        <bpmn2:extensionElements>
-          <drools:metaData name="elementname">
-            <drools:metaValue><![CDATA[Proposition successful ?]]></drools:metaValue>
-          </drools:metaData>
-        </bpmn2:extensionElements>
-        <bpmn2:incoming>_BC9ED7AA-977A-491A-ADF7-0874D94A89D7</bpmn2:incoming>
-        <bpmn2:outgoing>_1D218E1C-2635-493B-9F4F-8EF25AB90138</bpmn2:outgoing>
-        <bpmn2:outgoing>_4987CC26-347A-44B0-A572-0B0A3574502F</bpmn2:outgoing>
-      </bpmn2:exclusiveGateway>
       <bpmn2:endEvent id="_6FB86A92-28B6-4104-B342-DB8FFFBF29D6" name="New client acquired">
         <bpmn2:extensionElements>
           <drools:metaData name="elementname">
@@ -713,14 +648,14 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
           </drools:metaData>
         </bpmn2:extensionElements>
         <bpmn2:outgoing>_0E455A67-6009-4B9D-AFE7-01033EE5903F</bpmn2:outgoing>
-        <bpmn2:timerEventDefinition id="_oQOgj5q8EeqjC44el5mTow">
-          <bpmn2:timeDuration xsi:type="bpmn2:tFormalExpression" id="_oQOgkJq8EeqjC44el5mTow">PT2M</bpmn2:timeDuration>
+        <bpmn2:timerEventDefinition id="_6HWWW5rAEeqjC44el5mTow">
+          <bpmn2:timeDuration xsi:type="bpmn2:tFormalExpression" id="_6HWWXJrAEeqjC44el5mTow">PT2M</bpmn2:timeDuration>
         </bpmn2:timerEventDefinition>
       </bpmn2:boundaryEvent>
     </bpmn2:subProcess>
   </bpmn2:process>
-  <bpmndi:BPMNDiagram id="_oQOgkZq8EeqjC44el5mTow">
-    <bpmndi:BPMNPlane id="_oQOgkpq8EeqjC44el5mTow" bpmnElement="PV207-project.Process8">
+  <bpmndi:BPMNDiagram id="_6HWWXZrAEeqjC44el5mTow">
+    <bpmndi:BPMNPlane id="_6HW9EJrAEeqjC44el5mTow" bpmnElement="PV207-project.Process8">
       <bpmndi:BPMNShape id="shape__F4D89D39-6462-44FE-9F34-92ECB4D3AB6D" bpmnElement="_F4D89D39-6462-44FE-9F34-92ECB4D3AB6D" isExpanded="true">
         <dc:Bounds height="484.25" width="1072.5" x="556.0" y="95.0"/>
       </bpmndi:BPMNShape>
@@ -735,11 +670,11 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
         <di:waypoint xsi:type="dc:Point" x="1229.75" y="495.0"/>
         <di:waypoint xsi:type="dc:Point" x="1271.0" y="498.0"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="shape__FEA2BEEA-08BD-43EB-BDFD-DFE5EABAF665" bpmnElement="_FEA2BEEA-08BD-43EB-BDFD-DFE5EABAF665">
-        <dc:Bounds height="56.0" width="56.0" x="1202.0" y="148.0"/>
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__6E694681-D7CD-4B37-8C85-94D9C43DB3F8" bpmnElement="_6E694681-D7CD-4B37-8C85-94D9C43DB3F8">
         <dc:Bounds height="102.0" width="154.0" x="967.75" y="301.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__FEA2BEEA-08BD-43EB-BDFD-DFE5EABAF665" bpmnElement="_FEA2BEEA-08BD-43EB-BDFD-DFE5EABAF665">
+        <dc:Bounds height="56.0" width="56.0" x="1202.0" y="148.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="edge_shape__EE88FAEE-71C0-4498-8164-4893191ECCDD_to_shape__19416F3F-6494-492B-B96B-6A54A90DDAB2" bpmnElement="_3747E5BA-C00B-4B59-9827-3938BE20A855">
         <di:waypoint xsi:type="dc:Point" x="1257.75" y="352.0"/>
@@ -751,10 +686,6 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
       <bpmndi:BPMNShape id="shape__A7667B2F-D3CF-4067-B8BB-C6E72685DCBA" bpmnElement="_A7667B2F-D3CF-4067-B8BB-C6E72685DCBA">
         <dc:Bounds height="56.0" width="56.0" x="921.0" y="468.0"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="edge_shape__13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A_to_shape__FEA2BEEA-08BD-43EB-BDFD-DFE5EABAF665" bpmnElement="_BC9ED7AA-977A-491A-ADF7-0874D94A89D7">
-        <di:waypoint xsi:type="dc:Point" x="1225.0" y="276.0"/>
-        <di:waypoint xsi:type="dc:Point" x="1230.0" y="176.0"/>
-      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__3ECF5B9C-B89F-49AA-8D84-84A7CFF58316_to_shape__F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A" bpmnElement="_E04B209B-A99F-42AC-B493-52AA77A32ECD">
         <di:waypoint xsi:type="dc:Point" x="618.0" y="496.0"/>
         <di:waypoint xsi:type="dc:Point" x="651.0" y="496.0"/>
@@ -767,9 +698,6 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
         <di:waypoint xsi:type="dc:Point" x="686.75" y="175.75"/>
         <di:waypoint xsi:type="dc:Point" x="890.75" y="176.0"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="shape__13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A" bpmnElement="_13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A">
-        <dc:Bounds height="102.0" width="154.0" x="1148.0" y="225.0"/>
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="edge_shape__6E694681-D7CD-4B37-8C85-94D9C43DB3F8_to_shape__EE88FAEE-71C0-4498-8164-4893191ECCDD" bpmnElement="_5D9045D0-DE43-422A-B215-C20BFF16EE48">
         <di:waypoint xsi:type="dc:Point" x="1121.75" y="352.0"/>
         <di:waypoint xsi:type="dc:Point" x="1201.75" y="352.0"/>
@@ -787,15 +715,15 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
         <di:waypoint xsi:type="dc:Point" x="904.25" y="227.0"/>
         <di:waypoint xsi:type="dc:Point" x="1044.75" y="301.0"/>
       </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__630341EE-2A80-4AA1-BF10-57F6BD931771_to_shape__FEA2BEEA-08BD-43EB-BDFD-DFE5EABAF665" bpmnElement="_742C9FD8-0276-4C11-9F8F-DA553A805474">
+        <di:waypoint xsi:type="dc:Point" x="1044.75" y="176.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1230.0" y="176.0"/>
+      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__A7667B2F-D3CF-4067-B8BB-C6E72685DCBA_to_shape__6ACFE577-A83E-40ED-8D89-397F6FD02463" bpmnElement="_2F3634AA-3641-4AC5-AAEB-9E699D3362FA">
         <di:waypoint xsi:type="dc:Point" x="949.0" y="468.0"/>
         <di:waypoint xsi:type="dc:Point" x="949.0" y="423.5"/>
         <di:waypoint xsi:type="dc:Point" x="686.0" y="423.5"/>
         <di:waypoint xsi:type="dc:Point" x="687.0" y="371.0"/>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="edge_shape__630341EE-2A80-4AA1-BF10-57F6BD931771_to_shape__13EE6DD0-D9CE-4B91-8336-7A16D9DCE76A" bpmnElement="_742C9FD8-0276-4C11-9F8F-DA553A805474">
-        <di:waypoint xsi:type="dc:Point" x="1044.75" y="176.0"/>
-        <di:waypoint xsi:type="dc:Point" x="1148.0" y="276.0"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="shape__00A277CC-63D0-4270-A1E1-C43613A56162" bpmnElement="_00A277CC-63D0-4270-A1E1-C43613A56162">
         <dc:Bounds height="102.0" width="154.0" x="609.75" y="124.75"/>
@@ -817,11 +745,11 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
       <bpmndi:BPMNShape id="shape__5DB8E50D-F00C-41D2-8E87-1A015F2B73FD" bpmnElement="_5DB8E50D-F00C-41D2-8E87-1A015F2B73FD">
         <dc:Bounds height="56.0" width="56.0" x="1101.0" y="470.0"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="shape__2F1C42FC-9B16-4F28-B4EB-26BA75EC3056" bpmnElement="_2F1C42FC-9B16-4F28-B4EB-26BA75EC3056">
-        <dc:Bounds height="56.0" width="56.0" x="1441.0" y="101.0"/>
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__630341EE-2A80-4AA1-BF10-57F6BD931771" bpmnElement="_630341EE-2A80-4AA1-BF10-57F6BD931771">
         <dc:Bounds height="102.0" width="154.0" x="890.75" y="125.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__2F1C42FC-9B16-4F28-B4EB-26BA75EC3056" bpmnElement="_2F1C42FC-9B16-4F28-B4EB-26BA75EC3056">
+        <dc:Bounds height="56.0" width="56.0" x="1441.0" y="101.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A" bpmnElement="_F86B59E7-8220-4DD1-85EB-A2ADB7A1EE9A">
         <dc:Bounds height="102.0" width="154.0" x="651.0" y="445.0"/>
@@ -864,19 +792,19 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_oQOgk5q8EeqjC44el5mTow" type="BPSimData">
+  <bpmn2:relationship id="_6HW9EZrAEeqjC44el5mTow" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
           <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters"/>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_32092B53-2DD3-4799-A2B6-E398BD505F67" id="_oQOglJq8EeqjC44el5mTow">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_32092B53-2DD3-4799-A2B6-E398BD505F67" id="_6HW9EprAEeqjC44el5mTow">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
               </bpsim:ProcessingTime>
             </bpsim:TimeParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_1CC08CB8-F58C-489A-9CF3-82A59B87EE23" id="_oQOglZq8EeqjC44el5mTow">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_1CC08CB8-F58C-489A-9CF3-82A59B87EE23" id="_6HW9E5rAEeqjC44el5mTow">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -896,7 +824,7 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_2FBAA3CC-7C6E-48AC-8C25-AF5974A7BBC1" id="_oQOglpq8EeqjC44el5mTow">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_2FBAA3CC-7C6E-48AC-8C25-AF5974A7BBC1" id="_6HW9FJrAEeqjC44el5mTow">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -919,7 +847,7 @@ System.out.println("List of restaurant is ready");]]></bpmn2:script>
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_oQN5MJq8EeqjC44el5mTow</bpmn2:source>
-    <bpmn2:target>_oQN5MJq8EeqjC44el5mTow</bpmn2:target>
+    <bpmn2:source>_6HWWAJrAEeqjC44el5mTow</bpmn2:source>
+    <bpmn2:target>_6HWWAJrAEeqjC44el5mTow</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
