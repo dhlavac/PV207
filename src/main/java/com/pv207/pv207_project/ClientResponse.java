@@ -34,7 +34,7 @@ public class ClientResponse implements java.io.Serializable {
 		this.responded = responded;
 	}
 	
-	public java.lang.Boolean isResponded( {
+	public java.lang.Boolean isResponded() {
 		return this.responded;
 	}
 
